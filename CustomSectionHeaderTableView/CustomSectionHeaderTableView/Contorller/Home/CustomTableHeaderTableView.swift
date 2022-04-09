@@ -11,7 +11,6 @@ class CustomTableHeaderTableView: UIViewController {
     @IBOutlet weak var customTableView: UITableView!
     
     let sectionName = ["Section-1", "Section-2", "Section-3", "Section-4"]
-    let name = ["Labedfsfsfsdl-1", "Label-2", "Label-3", "Label-4"]
     
     let color = [
         ["one", "two", "three", "four"],
@@ -86,7 +85,7 @@ extension CustomTableHeaderTableView: UITableViewDelegate, UITableViewDataSource
     
     /// Select table view cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selection cell- \(indexPath.row) : \(name[indexPath.row])")
+        print("selection cell- \(indexPath.row) : \(sectionName[indexPath.row])")
     }
     
 }
